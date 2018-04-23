@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conversation-list.component.scss']
 })
 export class ConversationListComponent implements OnInit {
-  list_conversation = [{id: 1, name: 'Room 1', place: '0969960196', time: '20/04/2018'},
+  list_conversation = [{id: 1, name: 'Room 1', place: 'Time City, Ha Noi', time: '20/04/2018'},
     {id: 2, name: 'Room 2', place: '43 Nguyen Chi Thanh, Ha Noi', time: '20/04/2018'},
     {id: 3, name: 'Room 4', place: '16 Pham Hung, Tu Liem, Ha Noi', time: '20/04/2018'},
     {id: 4, name: 'Room 4', place: 'Toa nha Golden Place, Le Van Luong', time: '20/04/2018'},
@@ -18,11 +18,11 @@ export class ConversationListComponent implements OnInit {
 
   ngOnInit() {
   }
-  join(id){
+  join(id) {
     alert('Ban muon tham gian cuoc hoi thoai ' + id);
   }
 
-  delete(id){
+  delete(id) {
     alert('Ban muon xoa cuoc tro chuyen nay ' + id);
   }
 }
